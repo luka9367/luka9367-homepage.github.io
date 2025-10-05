@@ -69,7 +69,7 @@ Pengjie Liu; Linhao Li; Hu Shao; Meixing Liu;**Jiaxu Fan**
 
 # 💬 Academic Exchange
 - *2025.09*, Hong Kong Baptist University(HKBU), Academic Seminar on Key Node Identification in Complex Networks.
-- *2025.07*, The Chinese University of Hong Kong, Shenzhen, 2025 Elite Undergraduate Summer Camp, Completed the courses:Introduction to Machine Learning, Explainable Artificial Intelligence (XAI), and Mathematical Principles of Artificial Intelligence.
+- *2025.07*, The Chinese University of Hong Kong, Shenzhen, 2025 Elite Undergraduate Summer Camp, Completed the courses: Introduction to Machine Learning, Explainable Artificial Intelligence (XAI), and Mathematical Principles of Artificial Intelligence.
 - *2024.07*, Nanyang Technological University (NTU), CS2400 Foundation of Information Analytics.
 
 # 💻 Internships
