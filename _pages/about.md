@@ -56,8 +56,6 @@ Pengjie Liu; Linhao Li; Hu Shao; Meixing Liu;**Jiaxu Fan**
 </div>
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
 - *Aug. 2025*, Academic Exploration Award in The Chinese University of Hong Kong, Shenzhen
 - *Jan. 2025*, Bronze Medal in The 2024 University Physics Competition 
 - *Dec. 2023*, First-Class Scholarship of CUMT & Outstanding Student of CUMT 
@@ -69,9 +67,10 @@ Pengjie Liu; Linhao Li; Hu Shao; Meixing Liu;**Jiaxu Fan**
 - *2026.09 - Now*, Master of Philosophy, Computer and Information Engineering, The Chinese University of Hong Kong, Shenzhen, China.
 - *2022.09 - 2026.06*, Bachelor of Mathematics and Applied Mathematics, China University of Mining and Technology, Xuzhou, China. 
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+# 💬 Academic Exchange
+- *2025.09*, Hong Kong Baptist University(HKBU), Academic Seminar on Key Node Identification in Complex Networks.
+- *2025.07*, The Chinese University of Hong Kong, Shenzhen, 2025 Elite Undergraduate Summer Camp, Completed the courses:Introduction to Machine Learning, Explainable Artificial Intelligence (XAI), and Mathematical Principles of Artificial Intelligence.
+- *2024.07*, Nanyang Technological University (NTU), CS2400 Foundation of Information Analytics.
 
 # 💻 Internships
 - *July 2025 - Aug. 2025*, Summer Research, The Chinese University of Hong Kong, Shenzhen.
