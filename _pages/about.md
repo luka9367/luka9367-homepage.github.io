@@ -44,6 +44,17 @@ Detailed academic background, project experiences, and research explorations are
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Networks and Spatial Economics, November 7, 2024</div><img src='/luka9367/luka9367-homepage.github.io/edit/main/_pages/images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[An Inertial-type CG Projection Method with Restart for Pseudo-monotone Costs with Application to Traffic Assignment]
+
+Pengjie Liu; Linhao Li; Hu Shao; Meixing Liu;**Jiaxu Fan**
+
+- We introduce the iRMILrp-CGP method with restart procedure and self-adaptive line search for solving nonlinear equation systems (SoNE), prove its global convergence for continuous pseudo-monotone costs (no Lipschitz continuity needed), validate its efficiency via SoNE experiments, and show its practicality in traffic assignment. 
+</div>
+</div>
+
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
