@@ -42,8 +42,6 @@ Detailed academic background, project experiences, and research explorations are
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Networks and Spatial Economics, November 7, 2024</div><img src='../images/capture2.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
