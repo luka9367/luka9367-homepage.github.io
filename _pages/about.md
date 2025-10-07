@@ -30,7 +30,7 @@ Detailed academic background, project experiences, and research explorations are
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Netw. Spatial Econ., Nov 2024</div><img src="{{ site.baseurl }}/images/capture2.png" alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Netw. Spatial Econ., Nov 2024</div><img src="../images/capture2.png" alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Inertial-type CG Projection Method with Restart for Pseudo-monotone Costs with Application to Traffic Assignment]
