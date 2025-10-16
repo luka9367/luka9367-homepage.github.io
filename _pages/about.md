@@ -20,7 +20,7 @@ My name is Fan Jiaxu. I am currently pursuing a Master of Philosophy in Computer
 
 Prior to this, I earned a Bachelor of Science in Mathematics from China University of Mining and Technology (CUMT). Under the guidance of Shao Hu, my undergraduate research centered on Optimization Algorithms and their applications in Intelligent Transportation.  
 
-Beyond my core research, I have a keen interest in complex networks, queuing theory, and LLM reasoning—exploring these to expand my interdisciplinary perspective. Outside academia, I enjoy watching films, which helps me unwind, gain cultural insights, and inspire creativity.  
+Beyond my core research, I have a keen interest in generative physics AI, and Agentic AI to expand my interdisciplinary perspective. Outside academia, I enjoy watching films, which helps me unwind, gain cultural insights, and inspire creativity.  
 
 Detailed academic background, project experiences, and research explorations are available on my homepage.
 
