@@ -41,6 +41,19 @@ Pengjie Liu; Linhao Li; Hu Shao; Meixing Liu;**Jiaxu Fan**
 </div>
 </div>
 
+# 📝 Projects
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Student Innovation & Entrepreneurship Project</div><img src="../images/图谱图片.png" alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Construction of an Advanced ODE Learning System Derived from Knowledge Graphs]
+
+**Jiaxu Fan**; Xiaobo Yang; Huixing Zhang
+
+- This project develops an advanced ODE learning system empowered by knowledge graph technology, integrated with large language models (LLMs) and Neo4j graph database. We’ve researched core technologies including KNN, PageRank algorithms, and knowledge graph visualization, then applied PageRank to quantify importance scores for key ODE knowledge nodes. Leveraging Python, we constructed a structured knowledge graph covering ODE Chapters 1–4 and developed visual dashboards with a web interface.
+</div>
+</div>
+
 # 🎖 Honors and Awards
 - *Aug. 2025*, Academic Exploration Award in The Chinese University of Hong Kong, Shenzhen
 - *Jan. 2025*, Bronze Medal in The 2024 University Physics Competition 
