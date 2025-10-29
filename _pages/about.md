@@ -50,7 +50,7 @@ Pengjie Liu; Linhao Li; Hu Shao; Meixing Liu;**Jiaxu Fan**
 
 **Jiaxu Fan**; Xiaobo Yang; Huixing Zhang
 
-- This project develops an advanced ODE learning system integrated with LLMs and Neo4j graph database. We’ve researched core technologies including KNN, PageRank algorithms, and knowledge graph visualization, using PageRank to quantify importance scores for key ODE knowledge nodes. Leveraging Python, we constructed a structured knowledge graph covering ODE Chapters 1–4 and developed visual dashboards with a web interface.
+- This project develops an advanced ODE learning system integrated with LLMs and Neo4j database. We’ve researched core technologies including KNN, PageRank algorithms, and knowledge graph visualization, using PageRank to quantify importance scores for key ODE knowledge nodes. Leveraging Python, we constructed a structured knowledge graph and developed visual dashboards with a web interface.
 </div>
 </div>
 
