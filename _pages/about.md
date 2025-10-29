@@ -43,7 +43,7 @@ Pengjie Liu; Linhao Li; Hu Shao; Meixing Liu;**Jiaxu Fan**
 
 # 📝 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Student Innovation & Entrepreneurship Project</div><img src="../images/drawio1.png" alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Student Innovation & Entrepreneurship Project</div><img src="../images/drawio.png" alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Construction of an Advanced ODE Learning System Derived from Knowledge Graphs]
