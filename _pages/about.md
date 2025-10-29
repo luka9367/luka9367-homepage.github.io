@@ -16,11 +16,11 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-My name is Fan Jiaxu. I am currently pursuing a Master of Philosophy in Computer and Information Engineering at The Chinese University of Hong Kong, Shenzhen, where I conduct research at the Network Coding Laboratory (NCLab). Jointly supervised by Yang Shenghao and Chen Yi, my core research focuses on Multi-Agent Reinforcement Learning and Information Coding.  
+My name is Fan Jiaxu. I am currently pursuing a Master of Philosophy in Computer and Information Engineering at The Chinese University of Hong Kong, Shenzhen, researching at the Network Coding Laboratory (NCLab). Jointly supervised by Yang Shenghao and Chen Yi, my core research focuses on Multi-Agent Reinforcement Learning, Generative Models and Information Coding.  
 
-Prior to this, I earned a Bachelor of Science in Mathematics from China University of Mining and Technology (CUMT). Under the guidance of Shao Hu, my undergraduate research centered on Optimization Algorithms and their applications in Intelligent Transportation.  
+Prior to this, I earned a Bachelor of Science in Mathematics from China University of Mining and Technology (CUMT). Under the guidance of Shao Hu, my undergraduate research centered on Operations Research and Optimization Algorithms in the transportation field.
 
-Beyond my core research, I have a keen interest in generative physics AI, and Agentic AI to expand my interdisciplinary perspective. Outside academia, I enjoy watching films, which helps me unwind, gain cultural insights, and inspire creativity.  
+Complementing my core work, I focus on the CUDA-Q Based Quantum Software Ecosystem for cross-disciplinary growth. Outside academia, I enjoy strolling through parks, watching movies and trying delicious food—these little things keep my life balanced. 
 
 Detailed academic background, project experiences, and research explorations are available on my homepage.
 
