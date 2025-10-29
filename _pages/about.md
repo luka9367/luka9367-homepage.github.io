@@ -30,7 +30,7 @@ Detailed academic background, project experiences, and research explorations are
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Netw. Spatial Econ., Nov 2024</div><img src="../images/capture2.png" alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Netw. Spatial Econ. Nov 2024</div><img src="../images/capture2.png" alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Inertial-type CG Projection Method with Restart for Pseudo-monotone Costs with Application to Traffic Assignment]
@@ -43,7 +43,7 @@ Pengjie Liu; Linhao Li; Hu Shao; Meixing Liu;**Jiaxu Fan**
 
 # 📝 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Student Innovation & Entrepreneurship Project</div><img src="../images/drawio.png" alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CSIEP Projects</div><img src="../images/drawio.png" alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Construction of an Advanced ODE Learning System Derived from Knowledge Graphs]
