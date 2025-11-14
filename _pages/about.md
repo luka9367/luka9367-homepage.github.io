@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 My name is Fan Jiaxu. I am currently pursuing a Master of Philosophy in Computer and Information Engineering at The Chinese University of Hong Kong, Shenzhen, researching at the Network Coding Laboratory (NCLab). Jointly supervised by Yang Shenghao and Chen Yi, my core research focuses on Multi-Agent Reinforcement Learning, Generative Models and Information Coding.  
 
-Prior to this, I earned a Bachelor of Science in Mathematics from China University of Mining and Technology (CUMT). Under the guidance of Shao Hu, my undergraduate research centered on Operations Research and Optimization Algorithms in the transportation field.
+Prior to this, I earned a Bachelor of Science in Mathematics from China University of Mining and Technology (CUMT). Under the guidance of Prof.Wu Gang, my undergraduate research centered on Optimization Algorithms and Multimodal Models.
 
 Complementing my core work, I focus on the CUDA-Q Based Quantum Software Ecosystem for cross-disciplinary growth. Outside academia, I enjoy strolling through parks, watching movies and trying delicious food—these little things keep my life balanced. 
 
