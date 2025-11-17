@@ -59,6 +59,7 @@ Pengjie Liu; Linhao Li; Hu Shao; Meixing Liu;**Jiaxu Fan**
 - *Jan. 2025*, Bronze Medal in The 2024 University Physics Competition 
 - *Dec. 2023*, First-Class Scholarship of CUMT & Outstanding Student of CUMT 
 - *Dec. 2024*, Second-Class Scholarship of CUMT & Outstanding Student of the School of Mathematics
+- *Sep. 2024*, Jiangsu Provincial Government Overseas Study Scholarship
 - *June 2024*, First Prize of the May 1st Mathematical Modeling Contest in Jiangsu Province 
 - *Jan. 2024*, Special Prize in the Red Special Category of the Challenge Cup
 
