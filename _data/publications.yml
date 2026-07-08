@@ -1,0 +1,85 @@
+# =============================================================
+#  _data/publications.yml
+#  Add a new entry at the top of the list to make it appear first.
+#  Schema:
+#    - year: <int>
+#      title: <string>
+#      authors:
+#        - { name: <string>, me: <bool> }
+#      venue: <string, e.g. "NeurIPS" / "Networks and Spatial Economics">
+#      venue_extra: <string, optional>
+#      badge: <"" | "oral" | "spotlight" | "first", default empty>
+#      equal: <bool, default false>
+#      featured: <bool, default false>   # show on home as featured paper
+#      thumb: <string, optional>         # path under /assets/images/
+#      links:
+#        - { label: "DOI",    url: <url> }
+#        - { label: "arXiv",  url: <url> }
+#        - { label: "Code",   url: <url> }
+# =============================================================
+
+# --- 2026 (latest at top) ---
+- year: 2026
+  title: "An Inertial-type CG Projection Method with Restart for Pseudo-monotone Costs with Application to Traffic Assignment"
+  authors:
+    - { name: "A. Liu" }
+    - { name: "B. Wang" }
+    - { name: "Jiaxu Fan", me: true }
+    - { name: "C. Zhang" }
+  venue: "Networks and Spatial Economics"
+  venue_extra: "Springer · 中科院 JCR Q3 · Under review"
+  badge: "first"
+  equal: true
+  featured: true
+  thumb: "papers/cg-projection.svg"
+  links:
+    - { label: "DOI",   url: "https://doi.org/10.1007/s11067-026-09666-5" }
+    - { label: "arXiv", url: "https://arxiv.org/abs/2603.00010" }
+
+- year: 2026
+  title: "Controllable Multi-modal Figure Generation for Academic Publishing"
+  authors:
+    - { name: "Jiaxu Fan", me: true }
+  venue: "Working paper"
+  venue_extra: "Manuscript in preparation"
+  badge: ""
+  equal: false
+  links:
+    - { label: "Code", url: "https://github.com/luka9367/SciCoverGen" }
+
+- year: 2026
+  title: "A 12-Dimensional Quality Lens for AI-Generated Scientific Figures"
+  authors:
+    - { name: "Jiaxu Fan", me: true }
+  venue: "Working paper"
+  venue_extra: "Companion to SciCoverGen"
+  badge: ""
+  equal: false
+  links:
+    - { label: "Code", url: "https://github.com/luka9367/figure-qa" }
+
+# --- 2025 ---
+- year: 2025
+  title: "Designing Tool Affordances for Non-Engineers: A Case Study of AI Figure Editors"
+  authors:
+    - { name: "Jiaxu Fan", me: true }
+  venue: "CHI Late-Breaking Work (Concept)"
+  venue_extra: "Extended Abstract"
+  badge: ""
+  equal: false
+  links:
+    - { label: "PDF",  url: "https://example.com/chi25.pdf" }
+
+# --- 2024 ---
+- year: 2024
+  title: "基于知识图谱的常微分方程进阶式学习系统的构建"
+  authors:
+    - { name: "Jiaxu Fan", me: true }
+    - { name: "D. Chen" }
+    - { name: "E. Liu" }
+  venue: "国家级大学生创新创业训练计划"
+  venue_extra: "结题报告 · 创新训练类"
+  badge: "first"
+  equal: false
+  links:
+    - { label: "Project page", url: "https://github.com/luka9367/ode-kg" }

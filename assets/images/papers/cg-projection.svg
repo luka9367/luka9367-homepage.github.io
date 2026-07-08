@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="CG Projection Method — convergence on a traffic assignment instance">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#F4F1EA"/>
+      <stop offset="100%" stop-color="#EAE6DA"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8F5EC"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0F2A47"/>
+      <stop offset="100%" stop-color="#1A3A6E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="360" height="240" fill="url(#bg)"/>
+
+  <!-- title -->
+  <g font-family="'Inter', sans-serif" fill="#0B1220">
+    <text x="20" y="28" font-size="11" font-weight="700" letter-spacing="0.5">CG PROJECTION · TRAFFIC ASSIGNMENT</text>
+    <text x="20" y="44" font-size="9" fill="#6B7280">Residual norm vs. iteration count</text>
+  </g>
+  <line x1="20" y1="56" x2="340" y2="56" stroke="#D1D5DB" stroke-width="0.6"/>
+
+  <!-- axes -->
+  <g stroke="#9CA3AF" stroke-width="0.6" fill="none">
+    <line x1="50" y1="200" x2="340" y2="200"/>
+    <line x1="50" y1="80"  x2="50"  y2="200"/>
+  </g>
+  <!-- y ticks -->
+  <g font-family="JetBrains Mono, monospace" font-size="7" fill="#6B7280">
+    <text x="20" y="84"  text-anchor="end">1e0</text>
+    <text x="20" y="124" text-anchor="end">1e-4</text>
+    <text x="20" y="164" text-anchor="end">1e-8</text>
+    <text x="20" y="200" text-anchor="end">1e-12</text>
+  </g>
+  <!-- x ticks -->
+  <g font-family="JetBrains Mono, monospace" font-size="7" fill="#6B7280" text-anchor="middle">
+    <text x="50"  y="214">0</text>
+    <text x="122" y="214">200</text>
+    <text x="195" y="214">400</text>
+    <text x="267" y="214">600</text>
+    <text x="340" y="214">800</text>
+  </g>
+  <text x="195" y="232" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#3D4756">Iteration</text>
+  <text x="20"  y="46"  font-family="Inter, sans-serif" font-size="8" fill="#3D4756">log‖r‖</text>
+
+  <!-- baseline (classical CG) -->
+  <polyline points="50,86 80,98 110,114 140,130 170,144 200,158 230,170 260,180 290,188 320,194"
+            fill="none" stroke="#9CA3AF" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+  <!-- proposed inertial CG + restart -->
+  <polyline points="50,86 75,104 100,128 125,154 150,178 175,194 200,200"
+            fill="none" stroke="#0F2A47" stroke-width="1.8"/>
+  <!-- restart bump -->
+  <polyline points="200,200 205,168 225,184 250,200"
+            fill="none" stroke="#0F2A47" stroke-width="1.8"/>
+
+  <!-- highlight "+48.3% speed-up" -->
+  <g>
+    <rect x="240" y="68" width="92" height="28" rx="3" fill="#FFF4C2" stroke="#B5853B" stroke-width="0.6"/>
+    <text x="248" y="84" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#8B6532">+48.3%</text>
+    <text x="248" y="93" font-family="Inter, sans-serif" font-size="7" fill="#8B6532">convergence rate</text>
+  </g>
+
+  <!-- legend -->
+  <g font-family="Inter, sans-serif" font-size="8" fill="#3D4756">
+    <line x1="58"  y1="68" x2="78"  y2="68" stroke="#0F2A47" stroke-width="1.8"/>
+    <text x="82"  y="71">Inertial CG + Restart (ours)</text>
+    <line x1="58"  y1="56" x2="78"  y2="56" stroke="#9CA3AF" stroke-width="1.2" stroke-dasharray="3 3"
+          transform="translate(0,16)"/>
+    <text x="82"  y="74">Classical CG</text>
+  </g>
+</svg>

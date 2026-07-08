@@ -1,0 +1,808 @@
+---
+layout: default
+title: ""
+permalink: /
+description: "Jiaxu Fan (范嘉许) — incoming M.phil student in Computer & Information Engineering at CUHK(SZ), School of Science and Engineering. Research in multi-modal generation, AI-augmented search, and open-source AI tooling."
+---
+
+<!-- ============================================================
+     HERO — identity + research statement + open-to
+     ============================================================ -->
+<section class="hero reveal" id="about">
+  <div class="hero__greeting">Welcome · 欢迎</div>
+
+  <h1 class="hero__name">
+    Jiaxu Fan<span class="hero__name-cn">{{ site.author.name_cn }}</span>
+  </h1>
+
+  <p class="hero__role">
+    {{ site.author.role }}
+    {%- if site.author.role_extra -%} <span style="color:#1F4A82;font-weight:400;">{{ site.author.role_extra }}</span>{%- endif -%}
+    · {{ site.author.school }} · {{ site.author.institution }}
+  </p>
+
+  <p class="hero__advisor">
+    {{ site.author.advisor.name | escape }}
+    <span style="color:#D1D5DB;margin:0 6px;">·</span>
+    <em style="color:#1F4A82;">{{ site.author.advisor.role }}</em>
+  </p>
+
+  {%- if site.author.research_tagline -%}
+  <p class="hero__tagline">{{ site.author.research_tagline }}</p>
+  {%- endif -%}
+
+  <!-- "Currently" pulse -->
+  <div class="hero__now">
+    <strong>Currently</strong>
+    <span class="hero__now-sep">·</span>
+    Wrapping up an internship at <strong>Shanghai AI Lab</strong>
+    <span class="hero__now-sep">·</span>
+    Prepping <strong>M.phil</strong> @ CUHK(SZ), Fall 2026
+  </div>
+
+  <!-- Open to opportunities -->
+  {%- if site.author.open_to -%}
+  <div class="hero__open-to" aria-label="Open to">
+    {%- for item in site.author.open_to -%}
+    <span class="opportunity-badge">{{ item }}</span>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+
+  <div class="hero__cta">
+    <a class="btn btn--primary" href="mailto:{{ site.author.email_user }}@{{ site.author.email_domain }}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      Get in touch
+    </a>
+    <a class="btn btn--ghost" href="{{ '/cv/' | relative_url }}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+      Download CV
+    </a>
+    <a class="btn btn--ghost" href="https://scholar.google.com/citations?user={{ site.author.scholar | default: 'YOUR_GOOGLE_SCHOLAR_ID' }}" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.9V17h2V9z"/><path d="M5 13.2v4L12 21l7-3.8v-4L12 17z"/></svg>
+      Google Scholar
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS — quick, scannable numbers
+     ============================================================ -->
+<section class="reveal" aria-label="At a glance">
+  <div class="hero__stats">
+    <div class="hero__stat">
+      <span class="hero__stat-num">{{ site.publications | size }}</span>
+      <span class="hero__stat-label">Publications</span>
+    </div>
+    <div class="hero__stat">
+      <span class="hero__stat-num">2</span>
+      <span class="hero__stat-label">First-author</span>
+    </div>
+    <div class="hero__stat">
+      <span class="hero__stat-num">4</span>
+      <span class="hero__stat-label">Internships</span>
+    </div>
+    <div class="hero__stat">
+      <span class="hero__stat-num">6+</span>
+      <span class="hero__stat-label">Open-source Projects</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT / BIO
+     ============================================================ -->
+<section class="section section--bordered reveal" id="bio">
+  <header class="section__head">
+    <h2 class="section__title">About</h2>
+  </header>
+  <p class="prose" style="max-width: 65ch; font-family: 'Fraunces', 'Source Serif Pro', Georgia, serif; font-size: 1.05rem; line-height: 1.75; color: #1A2233;">
+    I'm a soon-to-be <strong>M.phil student</strong> at the <em>School of Science and Engineering, CUHK(SZ)</em>,
+    where I'll start in <strong>September 2026</strong> after graduating with a B.Sc. in
+    <em>Mathematics &amp; Applied Mathematics</em> from <strong>China University of Mining and Technology</strong>
+    (GPA 91.74 / 100, top of the cohort).
+  </p>
+  <p class="prose" style="max-width: 65ch; font-family: 'Fraunces', 'Source Serif Pro', Georgia, serif; font-size: 1.05rem; line-height: 1.75; color: #1A2233; margin-top: 14px;">
+    My path so far has been deliberately <em>cross-disciplinary</em>: pure math at the
+    undergraduate level (mathematical analysis 97, advanced algebra 99, mathematical
+    statistics 97, real analysis 97), an early research stint in
+    <em>numerical optimization</em> that produced a paper in
+    <em>Networks and Spatial Economics</em> (Springer, JCR Q3),
+    and a self-directed pivot to <em>applied AI</em> after a summer research
+    internship at CUHK(SZ) in 2025.
+  </p>
+  <p class="prose" style="max-width: 65ch; font-family: 'Fraunces', 'Source Serif Pro', Georgia, serif; font-size: 1.05rem; line-height: 1.75; color: #1A2233; margin-top: 14px;">
+    Today, I split my time between two surfaces: the <em>engineering</em> of multi-modal
+    generative systems (turning free, open-weight models like
+    <em>Zhipu CogView-3-Flash</em> into reproducible academic figure pipelines) and the
+    <em>product surface</em> of AI tools (translating user needs into design specs, as I did
+    at the Tencent Future PM Camp and during the China Mobile AI internship).
+  </p>
+  <p class="prose" style="max-width: 65ch; font-family: 'Fraunces', 'Source Serif Pro', Georgia, serif; font-size: 1.05rem; line-height: 1.75; color: #1A2233; margin-top: 14px;">
+    Outside of work, I've been a provincial-level math olympiad winner,
+    built a knowledge-graph ODE learning system as part of a national
+    innovation program, and spent a summer in Singapore at <em>NTU</em>
+    on a Jiangsu provincial government overseas scholarship.
+  </p>
+</section>
+
+<!-- ============================================================
+     RESEARCH INTERESTS
+     ============================================================ -->
+<section class="section section--bordered reveal" id="interests">
+  <header class="section__head">
+    <h2 class="section__title">Research Interests</h2>
+    <a class="section__meta" href="{{ '/cv/' | relative_url }}">Full statement on CV →</a>
+  </header>
+
+  <div class="interests-grid">
+    <!-- 1. AI Search -->
+    <div class="interest-card">
+      <div class="interest-card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="20" y1="20" x2="16.5" y2="16.5"/>
+          <line x1="8" y1="11" x2="14" y2="11"/>
+        </svg>
+      </div>
+      <div>
+        <h4 class="interest-card__title">AI-augmented Search</h4>
+        <p class="interest-card__blurb">Grounded citation, retrieval-augmented generation, conversational IR.</p>
+      </div>
+    </div>
+
+    <!-- 2. Multi-modal Generation -->
+    <div class="interest-card">
+      <div class="interest-card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <circle cx="8.5" cy="11" r="1.5" fill="currentColor"/>
+          <path d="m21 17-5-5-9 9"/>
+        </svg>
+      </div>
+      <div>
+        <h4 class="interest-card__title">Multi-modal Generation</h4>
+        <p class="interest-card__blurb">Controllable image &amp; figure synthesis for scientific publishing.</p>
+      </div>
+    </div>
+
+    <!-- 3. HCI for AI -->
+    <div class="interest-card">
+      <div class="interest-card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 11V7a3 3 0 0 1 6 0v4"/>
+          <rect x="5" y="11" width="14" height="10" rx="2"/>
+        </svg>
+      </div>
+      <div>
+        <h4 class="interest-card__title">HCI for AI Tools</h4>
+        <p class="interest-card__blurb">Affordances &amp; interfaces for non-engineer creators.</p>
+      </div>
+    </div>
+
+    <!-- 4. Evaluation & QA -->
+    <div class="interest-card interest-card--gold">
+      <div class="interest-card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12h4l3-9 4 18 3-9h4"/>
+        </svg>
+      </div>
+      <div>
+        <h4 class="interest-card__title">Evaluation &amp; QA</h4>
+        <p class="interest-card__blurb">12-dimensional quality assessment for generative outputs.</p>
+      </div>
+    </div>
+
+    <!-- 5. Open-source Tooling -->
+    <div class="interest-card">
+      <div class="interest-card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"/>
+          <polyline points="8 6 2 12 8 18"/>
+        </svg>
+      </div>
+      <div>
+        <h4 class="interest-card__title">Open-source Tooling</h4>
+        <p class="interest-card__blurb">Reproducible AI pipelines &amp; community-driven software.</p>
+      </div>
+    </div>
+
+    <!-- 6. Numerical Optimization -->
+    <div class="interest-card">
+      <div class="interest-card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16v6H4z"/>
+          <path d="M4 14h16v6H4z"/>
+          <line x1="8" y1="7"  x2="16" y2="7"/>
+          <line x1="8" y1="17" x2="16" y2="17"/>
+        </svg>
+      </div>
+      <div>
+        <h4 class="interest-card__title">Numerical Optimization</h4>
+        <p class="interest-card__blurb">Matrix computation &amp; nonlinear complementarity problems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NEWS — recent activity
+     ============================================================ -->
+<section class="section section--bordered reveal" id="news">
+  <header class="section__head">
+    <h2 class="section__title">News<span class="section__count">recent</span></h2>
+  </header>
+  <ul class="news">
+    <li class="news__item">
+      <span class="news__date">Jul 2026</span>
+      <span class="news__body">
+        <span class="news__tag news__tag--paper">paper</span>
+        Manuscript on an <strong>inertial CG projection method with restart</strong> submitted to
+        <em>Networks and Spatial Economics</em> (Springer, JCR Q3) — algorithm converges
+        <strong>48.3%</strong> faster than classical CG on traffic-assignment instances.
+      </span>
+    </li>
+    <li class="news__item">
+      <span class="news__date">Apr – Jul 2026</span>
+      <span class="news__body">
+        <span class="news__tag news__tag--work">work</span>
+        Joined <strong>Shanghai AI Lab</strong> as a large-model annotation intern,
+        working on data-quality pipelines for the Shusheng multi-modal foundation model.
+      </span>
+    </li>
+    <li class="news__item">
+      <span class="news__date">Jan – Feb 2026</span>
+      <span class="news__body">
+        <span class="news__tag news__tag--work">work</span>
+        <strong>AI Algorithm Intern @ China Mobile</strong> — built a 500-customer
+        profile model that lifted FTTR marketing reach by <strong>20%</strong>
+        and grew new subscribers by <strong>15%</strong>.
+      </span>
+    </li>
+    <li class="news__item">
+      <span class="news__date">Jan – Feb 2026</span>
+      <span class="news__body">
+        <span class="news__tag news__tag--work">work</span>
+        Completed the <strong>Tencent Future PM Camp</strong> — designed and shipped
+        an AI-search product concept for QQ Browser using Trae SOLO + Claude 4.5.
+      </span>
+    </li>
+    <li class="news__item">
+      <span class="news__date">Jul – Aug 2025</span>
+      <span class="news__body">
+        <span class="news__tag news__tag--paper">work</span>
+        <strong>Summer research @ CUHK(SZ)</strong> — built
+        <a href="https://github.com/luka9367/labcanvas" rel="noopener">LabCanvas</a>,
+        the first version of the full-stack academic image generation platform,
+        and got the <strong>CUHK(SZ) Academic Innovation Award</strong>.
+      </span>
+    </li>
+    <li class="news__item">
+      <span class="news__date">Jul – Aug 2024</span>
+      <span class="news__body">
+        <span class="news__tag news__tag--talk">exchange</span>
+        <strong>NTU Singapore</strong> exchange on a
+        Jiangsu provincial overseas scholarship — coursework in statistical information analysis.
+      </span>
+    </li>
+  </ul>
+</section>
+
+<!-- ============================================================
+     FEATURED PUBLICATION
+     ============================================================ -->
+{%- assign featured = site.publications | where: "featured", true | first -%}
+{%- if featured -%}
+<section class="section section--bordered reveal" id="featured">
+  <header class="section__head">
+    <h2 class="section__title">Featured Work</h2>
+    <a class="section__meta" href="{{ '/publications/' | relative_url }}">All publications →</a>
+  </header>
+  <article class="featured-pub">
+    <div class="featured-pub__thumb">
+      {%- if featured.thumb -%}
+        <img src="{{ featured.thumb | prepend: '/assets/images/' | relative_url }}"
+             alt="Thumbnail for {{ featured.title }}" loading="lazy" decoding="async">
+      {%- else -%}
+        <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="200" height="130" fill="#F4F1EA"/>
+          <text x="100" y="70" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#0F2A47">Featured</text>
+        </svg>
+      {%- endif -%}
+    </div>
+    <div class="featured-pub__body">
+      <h3 class="featured-pub__title">{{ featured.title }}</h3>
+      <p class="featured-pub__authors">
+        {%- for a in featured.authors -%}
+          {%- if a.me -%}<span class="me">{{ a.name }}</span>{%- else -%}{{ a.name }}{%- endif -%}{%- unless forloop.last -%}, {%- endunless -%}
+        {%- endfor -%}
+        {%- if featured.equal -%}<span style="color:#6B7280;font-size:0.85em;">(* equal contribution)</span>{%- endif -%}
+      </p>
+      <p class="featured-pub__venue">
+        <strong>{{ featured.venue }}</strong>{% if featured.venue_extra %}, {{ featured.venue_extra }}{% endif %}
+        {%- if featured.badge and featured.badge != "" -%}
+          · <span class="pub-item__badge pub-item__badge--{{ featured.badge }}" style="font-size:0.65rem;">{{ featured.badge }}</span>
+        {%- endif -%}
+      </p>
+      <p class="featured-pub__desc">
+        An inertial-type <strong>conjugate-gradient projection method with restart</strong>
+        for pseudo-monotone cost problems — with a direct application to
+        <strong>traffic assignment</strong>. Our adaptive line-search direction
+        and restart schedule push the convergence rate up by 48.3% on
+        standard benchmarks, and the analysis is general enough to apply
+        to any large-scale monotone / pseudo-monotone variational inequality.
+      </p>
+      {%- if featured.links -%}
+      <div class="featured-pub__links">
+        {%- for link in featured.links -%}
+        <a class="featured-pub__link" href="{{ link.url }}" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7"/>
+            <path d="M7 7h10v10"/>
+          </svg>
+          {{ link.label }}
+        </a>
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
+    </div>
+  </article>
+</section>
+{%- endif -%}
+
+<!-- ============================================================
+     PUBLICATIONS — full list
+     ============================================================ -->
+<section class="section section--bordered reveal" id="publications">
+  <header class="section__head">
+    <h2 class="section__title">Publications<span class="section__count">{{ site.publications | size }} total</span></h2>
+    <span class="section__meta">* denotes equal contribution</span>
+  </header>
+  <ol class="pub-list" reversed>
+    {%- for pub in site.publications -%}
+    <li class="pub-item">
+      <span class="pub-item__year">{{ pub.year }}</span>
+      <div>
+        <h3 class="pub-item__title">
+          {{ pub.title }}
+          {%- if pub.badge and pub.badge != "" -%}
+          <span class="pub-item__badge pub-item__badge--{{ pub.badge }}">{{ pub.badge }}</span>
+          {%- endif -%}
+        </h3>
+        <p class="pub-item__authors">
+          {%- for a in pub.authors -%}
+            {%- if a.me -%}<span class="me">{{ a.name }}</span>{%- else -%}{{ a.name }}{%- endif -%}{%- unless forloop.last -%}, {%- endunless -%}
+          {%- endfor -%}
+          {%- if pub.equal -%}<span class="equal">(* equal contribution)</span>{%- endif -%}
+        </p>
+        <p class="pub-item__venue">
+          <span class="hl">{{ pub.venue }}</span>{% if pub.venue_extra %}, {{ pub.venue_extra }}{% endif %}
+        </p>
+        {%- if pub.links -%}
+        <div class="pub-item__links">
+          {%- for link in pub.links -%}
+          <a class="pub-item__link" href="{{ link.url }}" rel="noopener">{{ link.label }}</a>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
+      </div>
+    </li>
+    {%- endfor -%}
+  </ol>
+  <p class="muted" style="font-size: 0.9rem; margin-top: 12px;">
+    Full list on
+    <a href="https://scholar.google.com/citations?user={{ site.author.scholar | default: 'YOUR_GOOGLE_SCHOLAR_ID' }}" rel="noopener">Google Scholar</a> ·
+    <a href="https://dblp.org/pid/{{ site.author.dblp | default: '' }}.html" rel="noopener">DBLP</a> ·
+    <a href="https://orcid.org/{{ site.author.orcid | default: '' }}" rel="noopener">ORCID</a>
+  </p>
+</section>
+
+<!-- ============================================================
+     AWARDS & HONORS
+     ============================================================ -->
+<section class="section section--bordered reveal" id="awards">
+  <header class="section__head">
+    <h2 class="section__title">Awards &amp; Honors</h2>
+    <a class="section__meta" href="{{ '/cv/' | relative_url }}">Full CV →</a>
+  </header>
+  <ul class="awards">
+    <li class="award-item award-item--top">
+      <span class="award-item__year">2025</span>
+      <span class="award-item__amount">Honor</span>
+      <span class="award-item__title">
+        <span class="award-item__honor">CUHK(SZ) Academic Innovation Award</span>
+        <span class="award-item__org">Awarded during the CUHK(SZ) Summer Undergraduate Research Camp</span>
+      </span>
+    </li>
+    <li class="award-item award-item--top">
+      <span class="award-item__year">National</span>
+      <span class="award-item__amount">1st Prize</span>
+      <span class="award-item__title">
+        <span class="award-item__honor">全国大学生五一数学建模竞赛</span>
+        <span class="award-item__org">National First Prize · Mathematical Contest in Modeling (MCM-style)</span>
+      </span>
+    </li>
+    <li class="award-item award-item--top">
+      <span class="award-item__year">2024</span>
+      <span class="award-item__amount">Bronze</span>
+      <span class="award-item__title">
+        <span class="award-item__honor">国际大学生物理竞赛 · Bronze Medal</span>
+        <span class="award-item__org">International University Physics Competition</span>
+      </span>
+    </li>
+    <li class="award-item">
+      <span class="award-item__year">2024</span>
+      <span class="award-item__amount">Govt.</span>
+      <span class="award-item__title">
+        <span class="award-item__honor">Jiangsu Provincial Overseas Scholarship</span>
+        <span class="award-item__org">江苏省政府海外学习奖学金 · NTU Singapore exchange</span>
+      </span>
+    </li>
+    <li class="award-item">
+      <span class="award-item__year">2022 – 2026</span>
+      <span class="award-item__amount">Multiple</span>
+      <span class="award-item__title">
+        <span class="award-item__honor">校优秀学生 · 校一等奖学金</span>
+        <span class="award-item__org">China University of Mining and Technology · multiple years</span>
+      </span>
+    </li>
+  </ul>
+</section>
+
+<!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
+<section class="section section--bordered reveal" id="experience">
+  <header class="section__head">
+    <h2 class="section__title">Research &amp; Industry Experience</h2>
+  </header>
+  <ul class="timeline">
+    <li class="timeline__item">
+      <span class="timeline__period">Apr – Jul 2026</span>
+      <h3 class="timeline__title">Large-Model Annotation Intern</h3>
+      <div class="timeline__org">Shanghai AI Lab · 上海人工智能实验室</div>
+      <p class="timeline__desc">
+        Working on the data engineering for the Shusheng (书生) scientific
+        multi-modal foundation model. Own the end-to-end supply chain of
+        data quality — schema design, label taxonomy, standardized
+        annotation SOPs — and iterate the <em>Prompt strategy</em> based on
+        model feedback to keep data quality up across training rounds.
+        Built a multi-dimensional data quality evaluation framework and
+        shipped an automated acceptance pipeline that accelerated data
+        throughput for downstream training.
+      </p>
+    </li>
+    <li class="timeline__item">
+      <span class="timeline__period">Jan – Feb 2026</span>
+      <h3 class="timeline__title">AI Algorithm Intern</h3>
+      <div class="timeline__org">China Mobile · 中国移动通信集团</div>
+      <p class="timeline__desc">
+        Worked on 5G-network algorithm optimization and commercial analytics
+        with the Huawei wireless-NMS stack — network monitoring, quality
+        assessment, and coverage testing through a data-driven lens.
+        Built 500+ customer profile models, surfaced behavioural
+        segments and product-preference signals, and fed the resulting
+        audience into an <strong>FTTR (Fiber-to-the-Room)</strong> precision-marketing
+        playbook — reach <strong>+20%</strong>, new subscribers <strong>+15%</strong>.
+      </p>
+    </li>
+    <li class="timeline__item">
+      <span class="timeline__period">Jan – Feb 2026</span>
+      <h3 class="timeline__title">Project Member · Future PM Camp</h3>
+      <div class="timeline__org">Tencent · 腾讯未来产品经理创造营</div>
+      <p class="timeline__desc">
+        Built a full AI-search product concept for QQ Browser, end-to-end:
+        requirements analysis, A/B-test design, growth strategy, and
+        shipping the demo on the web using Trae SOLO + Claude 4.5.
+        Graduated with the official Tencent PM Camp certificate.
+      </p>
+    </li>
+    <li class="timeline__item">
+      <span class="timeline__period">Jul – Aug 2025</span>
+      <h3 class="timeline__title">Summer Research Intern</h3>
+      <div class="timeline__org">The Chinese University of Hong Kong, Shenzhen</div>
+      <p class="timeline__desc">
+        On the Zhipu <em>GLM-4-Flash</em> and <em>CogView-3-Flash</em> ecosystem,
+        designed and shipped the first version of <a href="https://github.com/luka9367/labcanvas" rel="noopener">LabCanvas</a> —
+        a full-stack academic image generation platform. The pipeline
+        includes a multi-layer structured Prompt engine, multi-candidate
+        parallel candidate selection, and a post-processing enhancement
+        module that pushes free-tier model quality toward paid-tier levels.
+        Received the CUHK(SZ) Academic Innovation Award.
+      </p>
+    </li>
+    <li class="timeline__item">
+      <span class="timeline__period">Jan – Mar 2025</span>
+      <h3 class="timeline__title">Information Technology Intern</h3>
+      <div class="timeline__org">Industrial and Commercial Bank of China (ICBC)</div>
+      <p class="timeline__desc">
+        Mining and visualization of financial data using Excel + Python —
+        cleaning, classifying and analysing banking-scale data and
+        producing three reports on customer behaviour, risk-management
+        trends, and credit-rating signals. Also worked the front counter:
+        daily advisory for 30+ retail customers, handling account
+        management, transfers, and wealth-management product allocation
+        across 1000+ resolved enquiries.
+      </p>
+    </li>
+    <li class="timeline__item">
+      <span class="timeline__period">Feb – Aug 2024</span>
+      <h3 class="timeline__title">Undergraduate Research Assistant</h3>
+      <div class="timeline__org">Numerical Optimization &amp; ML Lab · 中国矿业大学</div>
+      <p class="timeline__desc">
+        Designed adaptive line-search directions and conjugate parameters
+        for nonlinear complementarity problems, pushing the algorithm's
+        convergence rate by <strong>48.3%</strong> on benchmark instances.
+        Co-authored the paper that went on to
+        <em>Networks and Spatial Economics</em> (Springer, JCR Q3).
+      </p>
+    </li>
+  </ul>
+</section>
+
+<!-- ============================================================
+     EDUCATION
+     ============================================================ -->
+<section class="section section--bordered reveal" id="education">
+  <header class="section__head">
+    <h2 class="section__title">Education</h2>
+  </header>
+
+  <div class="edu-item">
+    <span class="edu-item__period">Sep 2026 – Jun 2028</span>
+    <div>
+      <h3 class="edu-item__title">M.phil, Computer &amp; Information Engineering</h3>
+      <div class="edu-item__meta">School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen</div>
+      <p class="edu-item__notes">Research-type Master's program. Coursework: computer vision, machine learning, data analysis, information theory, social computing, reinforcement learning.</p>
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <span class="edu-item__period">Sep 2022 – Jun 2026</span>
+    <div>
+      <h3 class="edu-item__title">B.Sc., Mathematics &amp; Applied Mathematics</h3>
+      <div class="edu-item__meta">China University of Mining and Technology · GPA 91.74 / 100</div>
+      <p class="edu-item__notes">Top of the cohort. Core coursework: mathematical analysis (97), advanced algebra (99), mathematical statistics (97), real analysis (97), mathematical literature reading (100), numerical analysis practice (99). Awards: university outstanding student, first-class scholarship, national first prize (May 1st MCM), international physics competition bronze.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SELECTED PROJECTS / OPEN-SOURCE
+     ============================================================ -->
+<section class="section section--bordered reveal" id="projects">
+  <header class="section__head">
+    <h2 class="section__title">Selected Projects &amp; Software<span class="section__count">3 featured</span></h2>
+    <a class="section__meta" href="https://github.com/{{ site.author.github }}?tab=repositories" rel="noopener">All on GitHub →</a>
+  </header>
+  <div class="cards">
+    <article class="card">
+      <div class="card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+      </div>
+      <h3 class="card__title">SciCoverGen / LabCanvas</h3>
+      <div class="card__meta">Python + FastAPI · 2025 – Present · Zhipu CogView-3-Flash</div>
+      <p class="card__desc">
+        A full-stack academic image generation platform. Multi-layer structured
+        Prompt engine + multi-candidate parallel selection + post-processing
+        enhancement pipeline, wrapping free public models and pushing their
+        quality toward paid-tier levels. Used by a small community of CS
+        students and researchers for paper figures.
+      </p>
+      <div class="card__tags">
+        <span class="tag tag--accent">matplotlib</span>
+        <span class="tag tag--gold">CogView</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">12-d QA</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><line x1="3" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="21" y2="12"/></svg>
+      </div>
+      <h3 class="card__title">CG Projection Method</h3>
+      <div class="card__meta">Python + NumPy · 2024 · <em>Networks and Spatial Economics</em></div>
+      <p class="card__desc">
+        Inertial-type conjugate-gradient projection with adaptive restart, applied
+        to pseudo-monotone cost problems and traffic assignment.
+        Convergence rate improved by <strong>48.3%</strong> over classical CG
+        on benchmark instances. Paper accepted at a Springer JCR-Q3 journal.
+      </p>
+      <div class="card__tags">
+        <span class="tag tag--accent">optimization</span>
+        <span class="tag">NumPy</span>
+        <span class="tag">published</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+      </div>
+      <h3 class="card__title">ODE Knowledge-Graph Learning System</h3>
+      <div class="card__meta">Python + Neo4j · 2024 – 2026 · National Innovation Program</div>
+      <p class="card__desc">
+        A knowledge-graph-driven progressive learning system for ordinary
+        differential equations. Uses <em>PageRank</em> on the concept graph,
+        <em>Bland-Altman</em> analysis for difficulty scoring, and
+        <em>Neo4j</em> as the backend. Funded by the National Innovation
+        and Entrepreneurship Training Program for Undergraduates.
+      </p>
+      <div class="card__tags">
+        <span class="tag tag--accent">Neo4j</span>
+        <span class="tag">PageRank</span>
+        <span class="tag">ed-tech</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </div>
+      <h3 class="card__title">QQ Browser · AI Search Concept</h3>
+      <div class="card__meta">Product Design · 2026 · Tencent Future PM Camp</div>
+      <p class="card__desc">
+        A product design prototype and feature roadmap for an AI-augmented
+        search surface on QQ Browser, exploring answer synthesis, source-grounded
+        citation, and conversational follow-up. Shipped using Trae SOLO + Claude 4.5.
+      </p>
+      <div class="card__tags">
+        <span class="tag tag--accent">product-design</span>
+        <span class="tag">LLM</span>
+        <span class="tag">UX</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     INVITED TALKS & TEACHING
+     ============================================================ -->
+<section class="section section--bordered reveal" id="talks">
+  <header class="section__head">
+    <h2 class="section__title">Invited Talks &amp; Teaching</h2>
+  </header>
+  <ul class="talks">
+    <li class="talk-item">
+      <span class="talk-item__date">Jul 2025</span>
+      <span>
+        <span class="talk-item__title">From Free Models to Research-Ready Tools: An Engineering View</span>
+        <span class="talk-item__venue">CUHK(SZ) Summer Research Symposium · Final presentation</span>
+      </span>
+    </li>
+    <li class="talk-item">
+      <span class="talk-item__date">Aug 2024</span>
+      <span>
+        <span class="talk-item__title">Statistical Information Analysis · Group Project</span>
+        <span class="talk-item__venue">Nanyang Technological University · Singapore exchange</span>
+      </span>
+    </li>
+    <li class="talk-item">
+      <span class="talk-item__date">2024 – 2025</span>
+      <span>
+        <span class="talk-item__title">Undergraduate Peer Tutoring</span>
+        <span class="talk-item__venue">Mathematical Analysis &amp; Linear Algebra · 中国矿业大学</span>
+      </span>
+    </li>
+  </ul>
+</section>
+
+<!-- ============================================================
+     SERVICE & COMMUNITY
+     ============================================================ -->
+<section class="section section--bordered reveal" id="service">
+  <header class="section__head">
+    <h2 class="section__title">Service &amp; Community</h2>
+  </header>
+  <div class="service-grid">
+    <div class="service-item">
+      <span class="service-item__role">Open-source Maintainer</span>
+      <span class="service-item__body"><strong>SciCoverGen</strong> &amp; <strong>LabCanvas</strong> — serving CS students and early-career researchers (2025 – Present).</span>
+    </div>
+    <div class="service-item">
+      <span class="service-item__role">Peer Tutoring</span>
+      <span class="service-item__body">Mathematical analysis, linear algebra, and numerical analysis practice for first- and second-year undergrads (2023 – 2025).</span>
+    </div>
+    <div class="service-item">
+      <span class="service-item__role">Project Lead</span>
+      <span class="service-item__body">Led the 国家级大学生创新创业训练计划 team on a knowledge-graph ODE learning system (2024 – 2026).</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS — kept compact
+     ============================================================ -->
+<section class="section section--bordered reveal" id="skills">
+  <header class="section__head">
+    <h2 class="section__title">Skills &amp; Tools</h2>
+  </header>
+  <div class="skills">
+    <div class="skills__group">
+      <h4>Languages</h4>
+      <ul class="skills__list">
+        <li>Python</li><li>MATLAB</li><li>R</li>
+        <li>SPSS</li><li>SQL</li><li>JavaScript</li>
+      </ul>
+    </div>
+    <div class="skills__group">
+      <h4>ML &amp; Data</h4>
+      <ul class="skills__list">
+        <li>PyTorch (working)</li><li>NumPy</li><li>Pandas</li>
+        <li>scikit-learn</li><li>Matplotlib</li><li>HuggingFace</li>
+      </ul>
+    </div>
+    <div class="skills__group">
+      <h4>Web &amp; Systems</h4>
+      <ul class="skills__list">
+        <li>FastAPI</li><li>HTML / CSS</li><li>JavaScript</li>
+        <li>Neo4j</li><li>GitHub</li><li>Docker (basic)</li>
+      </ul>
+    </div>
+    <div class="skills__group">
+      <h4>Languages (human)</h4>
+      <ul class="skills__list">
+        <li>Chinese (native)</li><li>English — IELTS 6.5, CET-6</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="section section--bordered reveal" id="contact">
+  <header class="section__head">
+    <h2 class="section__title">Get in touch</h2>
+  </header>
+  <p class="prose" style="max-width:none;">
+    I'm always happy to chat about research collaborations, open-source
+    AI tooling, internships, or anything related to AI for science and
+    education. The fastest way to reach me is email; for casual
+    conversation, GitHub or WeChat (see the sidebar).
+  </p>
+  <div class="contact-grid" style="margin-top:18px;">
+    <a class="contact-item" href="https://github.com/{{ site.author.github }}" rel="noopener">
+      <span class="contact-item__icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 3 .1 3.3.8.8 1.3 1.9 1.3 3.2 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+      </span>
+      <span>
+        <span class="contact-item__label">GitHub</span>
+        <span class="contact-item__value">@{{ site.author.github }}</span>
+      </span>
+    </a>
+    <a class="contact-item" href="https://scholar.google.com/citations?user={{ site.author.scholar | default: 'YOUR_GOOGLE_SCHOLAR_ID' }}" rel="noopener">
+      <span class="contact-item__icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l11 6 9-4.9V17h2V9z"/><path d="M5 13.2v4L12 21l7-3.8v-4L12 17z"/></svg>
+      </span>
+      <span>
+        <span class="contact-item__label">Google Scholar</span>
+        <span class="contact-item__value">Follow &amp; cite</span>
+      </span>
+    </a>
+    <a class="contact-item" href="mailto:{{ site.author.email_user }}@{{ site.author.email_domain }}">
+      <span class="contact-item__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      </span>
+      <span>
+        <span class="contact-item__label">Email</span>
+        <span class="contact-item__value">{{ site.author.email_user }} [at] {{ site.author.email_domain }}</span>
+      </span>
+    </a>
+    {%- if site.author.wechat -%}
+    <div class="contact-item">
+      <span class="contact-item__icon">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M9 4C5 4 2 6.7 2 10c0 2 .9 3.7 2.4 4.9L4 17l2.6-1.3c.7.2 1.5.3 2.3.3.2 0 .4 0 .6 0-.1-.4-.1-.8-.1-1.2 0-3.4 3-6.1 6.8-6.1.3 0 .6 0 .9.1C15.7 6 12.7 4 9 4zm-2.5 4.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm5 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          <path d="M22 14.4c0-2.7-2.6-4.9-5.9-4.9s-5.9 2.2-5.9 4.9 2.6 4.9 5.9 4.9c.6 0 1.2-.1 1.8-.2L20 20l-.4-1.6c1.5-1 2.4-2.4 2.4-4zm-7.5-1.1a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6zm3.6 0a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6z"/>
+        </svg>
+      </span>
+      <span>
+        <span class="contact-item__label">WeChat</span>
+        <span class="contact-item__value">{{ site.author.wechat }}</span>
+      </span>
+    </div>
+    {%- endif -%}
+  </div>
+</section>

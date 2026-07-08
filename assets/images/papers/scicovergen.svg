@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="SciCoverGen — four-mode figure generation overview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#F4F1EA"/>
+      <stop offset="100%" stop-color="#EAE6DA"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8F5EC"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0F2A47"/>
+      <stop offset="100%" stop-color="#1A3A6E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- canvas -->
+  <rect width="360" height="240" fill="url(#bg)"/>
+
+  <!-- title bar -->
+  <g font-family="'Inter', sans-serif" fill="#0B1220">
+    <text x="20" y="28" font-size="11" font-weight="700" letter-spacing="0.5">SCICOVERGEN</text>
+    <text x="20" y="44" font-size="9" fill="#6B7280">Four-mode figure generation pipeline</text>
+  </g>
+  <line x1="20" y1="56" x2="340" y2="56" stroke="#D1D5DB" stroke-width="0.6"/>
+
+  <!-- Four mode cards -->
+  <g>
+    <!-- Card 1: Text-to-Image -->
+    <rect x="20"  y="72" width="74" height="100" rx="4" fill="url(#card)" stroke="#D1D5DB" stroke-width="0.6"/>
+    <rect x="28"  y="80" width="58" height="38" rx="2" fill="url(#ink)"/>
+    <g transform="translate(57, 99)">
+      <circle r="8" fill="#E8D9B5" opacity="0.9"/>
+      <path d="M -5 5 L 0 -3 L 4 2 L 8 -4 L 12 5 Z" fill="#0B1220" opacity="0.6"/>
+    </g>
+    <text x="20" y="148" font-family="JetBrains Mono, monospace" font-size="7" fill="#0B1220" font-weight="600">01 · T2I</text>
+    <text x="20" y="160" font-family="Inter, sans-serif" font-size="6.5" fill="#3D4756">Text → Image</text>
+
+    <!-- Card 2: Vector -->
+    <rect x="102" y="72" width="74" height="100" rx="4" fill="url(#card)" stroke="#D1D5DB" stroke-width="0.6"/>
+    <rect x="110" y="80" width="58" height="38" rx="2" fill="#FAFAF7" stroke="#D1D5DB" stroke-width="0.4"/>
+    <g transform="translate(110, 80)" stroke="#0F2A47" stroke-width="1" fill="none">
+      <rect x="6" y="6" width="46" height="26" rx="2"/>
+      <line x1="6" y1="14" x2="52" y2="14"/>
+      <circle cx="14" cy="22" r="2" fill="#B5853B"/>
+      <line x1="22" y1="22" x2="48" y2="22"/>
+      <line x1="14" y1="28" x2="34" y2="28"/>
+    </g>
+    <text x="102" y="148" font-family="JetBrains Mono, monospace" font-size="7" fill="#0B1220" font-weight="600">02 · VEC</text>
+    <text x="102" y="160" font-family="Inter, sans-serif" font-size="6.5" fill="#3D4756">Text → Vector</text>
+
+    <!-- Card 3: Data-driven plot -->
+    <rect x="184" y="72" width="74" height="100" rx="4" fill="url(#card)" stroke="#D1D5DB" stroke-width="0.6"/>
+    <rect x="192" y="80" width="58" height="38" rx="2" fill="#FAFAF7" stroke="#D1D5DB" stroke-width="0.4"/>
+    <g transform="translate(192, 80)">
+      <line x1="6" y1="32" x2="52" y2="32" stroke="#9CA3AF" stroke-width="0.5"/>
+      <line x1="6" y1="32" x2="6" y2="6"  stroke="#9CA3AF" stroke-width="0.5"/>
+      <polyline points="10,28 18,22 26,26 34,16 42,20 50,10" fill="none" stroke="#0F2A47" stroke-width="1.2"/>
+      <circle cx="10" cy="28" r="1.2" fill="#0F2A47"/>
+      <circle cx="18" cy="22" r="1.2" fill="#0F2A47"/>
+      <circle cx="26" cy="26" r="1.2" fill="#0F2A47"/>
+      <circle cx="34" cy="16" r="1.2" fill="#0F2A47"/>
+      <circle cx="42" cy="20" r="1.2" fill="#0F2A47"/>
+      <circle cx="50" cy="10" r="1.2" fill="#B5853B"/>
+    </g>
+    <text x="184" y="148" font-family="JetBrains Mono, monospace" font-size="7" fill="#0B1220" font-weight="600">03 · PLOT</text>
+    <text x="184" y="160" font-family="Inter, sans-serif" font-size="6.5" fill="#3D4756">Data → Plot</text>
+
+    <!-- Card 4: Reproduction -->
+    <rect x="266" y="72" width="74" height="100" rx="4" fill="url(#card)" stroke="#D1D5DB" stroke-width="0.6"/>
+    <rect x="274" y="80" width="58" height="38" rx="2" fill="#FAFAF7" stroke="#D1D5DB" stroke-width="0.4"/>
+    <g transform="translate(274, 80)" fill="none" stroke="#0F2A47" stroke-width="0.6">
+      <rect x="6" y="6" width="20" height="12" stroke="#9CA3AF"/>
+      <rect x="32" y="6" width="20" height="12" stroke="#9CA3AF"/>
+      <rect x="6" y="22" width="46" height="10" stroke="#9CA3AF"/>
+      <path d="M 16 18 L 16 22 M 28 18 L 28 22" stroke="#B5853B" stroke-width="1.2"/>
+    </g>
+    <text x="266" y="148" font-family="JetBrains Mono, monospace" font-size="7" fill="#0B1220" font-weight="600">04 · REPR</text>
+    <text x="266" y="160" font-family="Inter, sans-serif" font-size="6.5" fill="#3D4756">Reproduce</text>
+  </g>
+
+  <!-- arrows between cards -->
+  <g fill="#B5853B" stroke="none">
+    <polygon points="95,122 100,118 100,126"/>
+    <polygon points="177,122 182,118 182,126"/>
+    <polygon points="259,122 264,118 264,126"/>
+  </g>
+
+  <!-- QA footer -->
+  <rect x="20" y="184" width="320" height="34" rx="4" fill="#0F2A47"/>
+  <text x="32" y="200" font-family="JetBrains Mono, monospace" font-size="8" fill="#E8D9B5" font-weight="600">12-D QUALITY LENS</text>
+  <g transform="translate(32, 206)">
+    <g fill="#3B6FA8" font-family="JetBrains Mono, monospace" font-size="6.5">
+      <text x="0"   y="6">READ</text>
+      <text x="42"  y="6">CONS</text>
+      <text x="86"  y="6">CLR</text>
+      <text x="118" y="6">COMP</text>
+      <text x="160" y="6">LITE</text>
+      <text x="194" y="6">SAFE</text>
+      <text x="232" y="6">TYPO</text>
+      <text x="272" y="6">+5</text>
+    </g>
+  </g>
+</svg>

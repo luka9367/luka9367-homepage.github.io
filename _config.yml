@@ -1,0 +1,184 @@
+# Welcome to Jekyll!
+#
+# Modern minimalist academic homepage.
+# Two-column (sidebar + main) layout, Princeton / MIT / Oxford inspired.
+# Designed for: AI / ML / HCI graduate researcher.
+
+# Site Settings
+title                    : "Jiaxu Fan"
+tagline                  : "AI Search · Multi-modal Generation · HCI for AI"
+description              : "Jiaxu Fan (范嘉许) is a graduate researcher at the School of Science and Engineering, CUHK(SZ). He works on AI-augmented search, multi-modal generation, and human-computer interaction."
+url                      : "https://luka9367.github.io"
+baseurl                  : "/luka9367-homepage.github.io"
+repository               : "luka9367/luka9367-homepage.github.io"
+last_updated             : "2026-07-08"
+
+# Site Author
+# Email is intentionally not stored in plain text. The template
+# composes it from `email_user` + `email_domain` at click time.
+author:
+  name             : "Jiaxu Fan"
+  name_cn          : "范嘉许"
+  avatar           : "images/avatar.svg"
+  role             : "Incoming M.phil Student, Computer & Information Engineering"
+  role_extra       : "(starting Fall 2026)"
+  institution      : "The Chinese University of Hong Kong, Shenzhen"
+  school           : "School of Science and Engineering"
+  department_short : "SSE"
+  location         : "Shenzhen, China"
+  email_obfuscated : true
+  email_user       : "2041165290"
+  email_domain     : "qq.com"
+  cv               : "files/cv.pdf"
+  github           : "luka9367"
+  scholar          : "YOUR_GOOGLE_SCHOLAR_ID"
+  orcid            : "0000-0000-0000-0000"
+  dblp             : "123/4567"
+  semantic_scholar : "JiaxuFan"
+  linkedin         : "luka9367"
+  twitter          : "luka9367"
+  wechat           : "luka_fanjiax"
+
+  # Advisor & affiliations
+  advisor:
+    name : "[Advisor TBD]"
+    role : "School of Science and Engineering, CUHK(SZ)"
+    url  : ""
+
+  # One-line research statement shown in the hero
+  research_tagline : "I build open, reproducible AI tools — turning free, open-weight generative models into research-ready systems for science and education."
+
+  # Quick "open to" signals (the user is hunting for AI research intern roles)
+  open_to:
+    - "AI Algorithm Intern"
+    - "Product Operations Intern"
+    - "Visiting Researcher Positions"
+    - "Open-source Collaborations"
+
+  # Research interests — icon + label + 1-line description
+  interests:
+    - { icon: "search",  label: "AI-augmented Search",    blurb: "Grounded citation, RAG, conversational IR." }
+    - { icon: "image",   label: "Multi-modal Generation", blurb: "Controllable image & figure synthesis for academic publishing." }
+    - { icon: "hci",     label: "HCI for AI Tools",       blurb: "Affordances for non-engineer creators." }
+    - { icon: "eval",    label: "Evaluation & QA",        blurb: "12-dimensional quality assessment of generative outputs." }
+    - { icon: "code",    label: "Open-source Tooling",    blurb: "Reproducible AI pipelines wrapped around free public models." }
+    - { icon: "math",    label: "Numerical Optimization", blurb: "Matrix computation &amp; nonlinear complementarity problems." }
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+  - assets
+exclude:
+  - docs
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - .github
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - Rakefile
+  - config
+  - gulpfile.js
+  - log
+  - node_modules
+  - package.json
+  - tmp
+  - vendor
+  - deploy.ps1
+  - serve.ps1
+  - DEPLOY.md
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author_profile: false
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+  load_paths:
+    - _sass
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Asia/Shanghai
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# =====================================================
+#  Publications — declared in _data/publications.yml
+#  Edit that file to add/remove papers. The home page
+#  auto-renders the list with this format:
+#
+#  - year: 2025
+#    title: "..."
+#    authors: [{name: "Jiaxu Fan", me: true}, {name: "..."}]
+#    venue: "NeurIPS"
+#    venue_extra: "Main Track"
+#    badge: ""               # "" / "oral" / "spotlight" / "first"
+#    equal: false
+#    featured: false         # show as featured paper
+#    thumb: "papers/x.svg"   # optional thumbnail
+#    links: [{label: "arXiv", url: "..."}, {label: "Code", url: "..."}]
+# =====================================================

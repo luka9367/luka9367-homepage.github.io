@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Jiaxu Fan favicon">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#1F4A82"/>
+      <stop offset="100%" stop-color="#0F2A47"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#g)"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#B5853B" stroke-width="0.6" opacity="0.5"/>
+  <text x="32" y="44" text-anchor="middle"
+        font-family="Georgia, serif" font-weight="700"
+        font-size="34" fill="#E8D9B5" letter-spacing="-1">JF</text>
+  <line x1="20" y1="50" x2="44" y2="50" stroke="#B5853B" stroke-width="0.8" stroke-linecap="round"/>
+</svg>

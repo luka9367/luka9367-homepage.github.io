@@ -1,0 +1,81 @@
+<!-- =============================================================
+     head.html — meta tags, fonts, CSS, favicons
+     ============================================================= -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F2A47">
+
+{%- assign desc = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 200 -%}
+<meta name="description" content="{{ desc | escape }}">
+
+{%- if site.author.name -%}
+  <meta name="author" content="{{ site.author.name }}">
+{%- endif -%}
+
+{%- if page.title -%}
+  <title>{{ page.title }} · {{ site.author.name | default: site.title }}</title>
+  <meta property="og:title" content="{{ page.title }} · {{ site.author.name | default: site.title }}">
+{%- else -%}
+  <title>{{ site.title | default: site.author.name }} — {{ site.tagline | default: site.description }}</title>
+  <meta property="og:title" content="{{ site.title | default: site.author.name }}">
+{%- endif -%}
+
+<meta property="og:site_name" content="{{ site.title | default: site.author.name }}">
+<meta property="og:description" content="{{ desc | escape }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+
+{%- if site.url -%}
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{%- endif -%}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | default: site.title }}">
+<meta name="twitter:description" content="{{ desc | escape }}">
+
+{%- comment -%} Preconnect to Google Fonts for fast font loading {%- endcomment -%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{%- comment -%} Load Fraunces (display serif) + Inter (UI) + JetBrains Mono (mono) {%- endcomment -%}
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+</noscript>
+
+{%- comment -%} Site stylesheet (Jekyll SASS pipeline) {%- endcomment -%}
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+{%- comment -%} Favicons {%- endcomment -%}
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+<link rel="alternate icon" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+
+{%- comment -%} JSON-LD structured data (Person schema) for SEO {%- endcomment -%}
+{%- if site.author.name -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name | escape }}",
+  "url": "{{ site.url | default: '/' }}",
+  "jobTitle": "{{ site.author.role | default: 'Researcher' | escape }}",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "{{ site.author.institution | default: 'CUHK(SZ)' | escape }}",
+    "subOrganization": "{{ site.author.school | default: 'School of Science and Engineering' | escape }}"
+  },
+  "alumniOf": "{{ site.author.institution | default: 'CUHK(SZ)' | escape }}",
+  "knowsAbout": ["Large Language Models", "Multi-modal Learning", "Information Retrieval", "Human-Computer Interaction", "Generative AI"],
+  "sameAs": [
+    {%- if site.author.github -%}"https://github.com/{{ site.author.github }}"{%- endif -%}
+    {%- if site.author.scholar -%}, "https://scholar.google.com/citations?user={{ site.author.scholar }}"{%- endif -%}
+    {%- if site.author.linkedin -%}, "https://www.linkedin.com/in/{{ site.author.linkedin }}"{%- endif -%}
+  ]
+}
+</script>
+{%- endif -%}

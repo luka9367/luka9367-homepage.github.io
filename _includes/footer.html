@@ -1,0 +1,22 @@
+<!-- =============================================================
+     footer.html — three-line academic footer
+     ============================================================= -->
+<footer class="site-footer" role="contentinfo">
+  <div class="layout--narrow">
+    <p class="site-footer__line">
+      © <span id="js-year">2026</span>
+      <strong style="color: var(--ink-700, #1A2233);">{{ site.author.name | default: site.title | default: 'Author' }}</strong>.
+      Last updated <span class="mono">{{ site.time | date: "%b %Y" }}</span>.
+    </p>
+    <p class="site-footer__line">
+      Built with <a href="https://jekyllrb.com/" rel="noopener">Jekyll</a> ·
+      Inspired by <a href="https://github.com/RayeRen/acad-homepage.github.io" rel="noopener">acad-homepage</a> ·
+      Hosted on <a href="https://pages.github.com/" rel="noopener">GitHub Pages</a>
+    </p>
+    <p class="site-footer__line">
+      <a href="https://github.com/{{ site.author.github }}" rel="noopener">GitHub</a> ·
+      <a href="/{{ site.baseurl | default: '' }}sitemap.xml">Sitemap</a> ·
+      <a href="/{{ site.baseurl | default: '' }}feed.xml">RSS</a>
+    </p>
+  </div>
+</footer>

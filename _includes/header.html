@@ -1,0 +1,35 @@
+<!-- =============================================================
+     header.html — sticky top nav with SVG icons
+     ============================================================= -->
+<header class="site-header" role="banner">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="{{ '/' | relative_url }}" aria-label="{{ site.author.name | default: 'Home' }}">
+      <span class="site-header__brand-mark" aria-hidden="true">
+        {%- if site.author.name -%}{{ site.author.name | slice: 0, 1 | upcase }}{%- else -%}·{%- endif -%}
+      </span>
+      <span>{{ site.author.name | default: site.title | default: 'Home' }}</span>
+    </a>
+
+    <button class="site-nav__toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="3" y1="6"  x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <nav id="primary-nav" class="site-nav" aria-label="Primary">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}class="is-active"{% endif %}>Home</a>
+      <a href="{{ '/#about' | relative_url }}">About</a>
+      <a href="{{ '/#interests' | relative_url }}">Research</a>
+      <a href="{{ '/#news' | relative_url }}">News</a>
+      <a href="{{ '/#publications' | relative_url }}">Publications</a>
+      <a href="{{ '/#awards' | relative_url }}">Awards</a>
+      <a href="{{ '/#experience' | relative_url }}">Experience</a>
+      <a href="{{ '/#projects' | relative_url }}">Projects</a>
+      <a href="{{ '/#talks' | relative_url }}">Talks</a>
+      <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      <a href="{{ '/cv/' | relative_url }}" {% if page.url == '/cv/' %}class="is-active"{% endif %}>CV</a>
+    </nav>
+  </div>
+</header>

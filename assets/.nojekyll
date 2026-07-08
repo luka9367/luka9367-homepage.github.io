@@ -1,0 +1,1 @@
+# Skip Jekyll processing for assets that should be served as-is.
