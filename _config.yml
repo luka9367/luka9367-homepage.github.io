@@ -152,20 +152,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
 
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-
-# HTML Compression
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
 # =====================================================
 #  Publications — declared in _data/publications.yml
 #  Edit that file to add/remove papers. The home page
