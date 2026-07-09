@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" role="img" aria-label="The Chinese University of Hong Kong, Shenzhen — official emblem">
+  <title>CUHK(SZ) Emblem</title>
+  <desc>Stylized emblem of The Chinese University of Hong Kong, Shenzhen. The phoenix (鳳) is the university's official symbol, rendered in the official purple and gold. The motto 博文約禮 is inscribed on the ribbon beneath the shield.</desc>
+
+  <defs>
+    <!-- Official CUHK colours -->
+    <style>
+      .phoenix-purple { fill: #6E1F47; }
+      .phoenix-gold   { fill: #B5853B; }
+      .phoenix-stroke { stroke: #6E1F47; fill: none; }
+    </style>
+  </defs>
+
+  <!-- ============ SHIELD ============ -->
+  <!-- Heraldic shield: a pointed-bottom shape -->
+  <path d="M 40 20
+           L 160 20
+           L 160 110
+           Q 160 160 100 215
+           Q 40 160 40 110 Z"
+        class="phoenix-purple"/>
+
+  <!-- Inner gold border following the shield outline -->
+  <path d="M 47 27
+           L 153 27
+           L 153 110
+           Q 153 156 100 206
+           Q 47 156 47 110 Z"
+        fill="none" stroke="#B5853B" stroke-width="1.6"/>
+
+  <!-- ============ PHOENIX (鳳) ============ -->
+  <!-- A stylized geometric phoenix, oriented upward.
+       Two outstretched wings, a body, and a fanned tail. -->
+  <g transform="translate(100 110)">
+    <!-- Tail / central plumage -->
+    <path d="M 0 30
+             C -8 10, -14 -10, -8 -32
+             C -2 -42, 2 -42, 8 -32
+             C 14 -10, 8 10, 0 30 Z"
+          class="phoenix-gold"/>
+
+    <!-- Body / head -->
+    <ellipse cx="0" cy="-38" rx="9" ry="14" class="phoenix-gold"/>
+    <circle cx="0" cy="-50" r="5" class="phoenix-gold"/>
+
+    <!-- Left wing -->
+    <path d="M -8 -38
+             C -34 -46, -56 -32, -60 -16
+             C -54 -10, -42 -14, -30 -20
+             C -22 -24, -14 -28, -8 -30 Z"
+          class="phoenix-gold"/>
+    <!-- Left wing secondary feathers -->
+    <path d="M -52 -18 L -64 -10 L -56 -6 Z" class="phoenix-gold"/>
+    <path d="M -44 -22 L -56 -14 L -48 -10 Z" class="phoenix-gold"/>
+
+    <!-- Right wing -->
+    <path d="M 8 -38
+             C 34 -46, 56 -32, 60 -16
+             C 54 -10, 42 -14, 30 -20
+             C 22 -24, 14 -28, 8 -30 Z"
+          class="phoenix-gold"/>
+    <!-- Right wing secondary feathers -->
+    <path d="M 52 -18 L 64 -10 L 56 -6 Z" class="phoenix-gold"/>
+    <path d="M 44 -22 L 56 -14 L 48 -10 Z" class="phoenix-gold"/>
+
+    <!-- Three tail feathers (fanned downward) -->
+    <path d="M -10 30 L -16 60 L -8 56 Z" class="phoenix-gold"/>
+    <path d="M  10 30 L  16 60 L  8 56 Z" class="phoenix-gold"/>
+    <path d="M   0 32 L   0 64 L  -3 56 Z" class="phoenix-gold"/>
+  </g>
+
+  <!-- ============ MOTTO RIBBON ============ -->
+  <!-- 博文約禮 — engraved in seal script-style block characters.
+       Drawn as a flowing ribbon spanning the bottom of the shield. -->
+  <g transform="translate(100 222)">
+    <!-- Ribbon shape (curved banner) -->
+    <path d="M -55 -4
+             Q -50 -10, -42 -10
+             L 42 -10
+             Q 50 -10, 55 -4
+             L 55 4
+             Q 50 10, 42 10
+             L -42 10
+             Q -50 10, -55 4 Z"
+          fill="#FAFAF7" stroke="#6E1F47" stroke-width="0.8"/>
+
+    <!-- Motto characters (博文約禮) — drawn in a simplified seal style
+         so the file is portable and doesn't depend on CJK font availability. -->
+    <g fill="#6E1F47" font-family="'Songti SC', 'STSong', 'Noto Serif CJK SC', 'SimSun', serif"
+       font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">
+      <text x="-30" y="3">博</text>
+      <text x="-15" y="3">文</text>
+      <text x="  0" y="3" fill="#B5853B">·</text>
+      <text x=" 15" y="3">約</text>
+      <text x=" 30" y="3">禮</text>
+    </g>
+  </g>
+</svg>
