@@ -402,37 +402,28 @@ blockquote {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
   margin: $sp-4 0 $sp-5;
-  padding: 14px 12px 12px;
+  padding: 14px 12px 14px;
   border-top: 1px solid $paper-200;
   border-bottom: 1px solid $paper-200;
-  background: linear-gradient(180deg, rgba(110, 31, 71, 0.025), transparent 70%);
+  background: linear-gradient(180deg, rgba(110, 31, 71, 0.03), transparent 80%);
   border-radius: $radius-sm;
   border-left: 0;  // override global link border
   border-right: 0; // override global link border
   text-decoration: none;
   transition: background .18s ease, transform .18s ease;
   &:hover {
-    background: linear-gradient(180deg, rgba(110, 31, 71, 0.06), transparent 70%);
+    background: linear-gradient(180deg, rgba(110, 31, 71, 0.07), transparent 80%);
     transform: translateY(-1px);
   }
 }
 .sidebar__emblem-img {
-  width: 110px;
+  width: 135px;
   height: auto;
   max-width: 100%;
   display: block;
   filter: drop-shadow(0 2px 6px rgba(11, 18, 32, 0.06));
-  @media (max-width: $bp-md) { width: 96px; }
-}
-.sidebar__emblem-credit {
-  font-family: $font-mono;
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: $ink-500;
-  font-weight: 600;
+  @media (max-width: $bp-md) { width: 120px; }
 }
 
 // =====================================================
